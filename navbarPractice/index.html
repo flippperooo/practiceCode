@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <nav>
+    <div class="nav">
+        <ul>
+           <a href=""><li class="navLinks hideOnMobile">Home</li></a>
+           <a href=""><li class="navLinks hideOnMobile">Services</li></a>
+           <a href=""><li class="navLinks hideOnMobile">About</li></a>
+           <a href=""><li class="navLinks hideOnMobile">Prices</li></a>
+           <a onclick=showHamburger() href="#" class="hideOnDesktop"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </ul>
+    </div>
+    <div class="hamburger">
+        <ul>
+            <a onclick=hideHamburger() href="#" class="hideOnDesktop"><li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li></a>
+           <a href="#"><li class="#">Home</li></a>
+           <a href="#"><li class="#">Services</li></a>
+           <a href="#"><li class="#">About</li></a>
+           <a href="#"><li class="#">Prices</li></a>
+        </ul>
+    </div>
+   </nav>
+   
+   <script>
+        function showHamburger(){
+            const hamburger = document.querySelector('.hamburger')
+            hamburger.style.display = 'flex'
+        }
+        function hideHamburger(){
+            const hamburger =document.querySelector('.hamburger')
+            hamburger.style.display = 'none'
+        }
+   </script>
+</body>
+</html>
